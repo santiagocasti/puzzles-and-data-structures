@@ -32,28 +32,15 @@ void printSolution(position queens[MAX_QUEENS], int numQueens){
  * violate any of the problem constrains.
  */
 bool validPosition(position q[MAX_QUEENS], int x, int y){
+	
 	int i;
-	//printf("%d) Checking if [%d, %d] is a valid position (", x, x, y);
 	for (i=0; i<x; ++i){
 		if ( q[i].y == y ||
 			 abs(q[i].x - x) == abs(q[i].y - y)){
-
-			int reason = 0;
-			if (q[i].x == x) reason = 1;
-			if (q[i].y == y) reason = 2;
-			if (q[i].x - x == q[i].y - y){
-				reason = 3;
-				//printf("(q[i].x = %d) - (x = %d) = (%d)\n", q[i].x, x, q[i].x - x);	
-				//printf("(q[i].y = %d) - (y = %d) = (%d)\n", q[i].y, y, q[i].y - y);
-			} 
-
-			//printf("FALSE[%d][%d]) - ", reason, i);
-			//printSolution(q, x);
 			return false;
 		}
 	}
-	//printf("TRUE) - ");
-	//printSolution(q, x);
+
 	return true;
 }
 
