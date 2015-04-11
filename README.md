@@ -11,6 +11,8 @@ Data Structures:
 * Double linked list implemented with pointers
 
 Puzzles and programming interview challenges:
+* Some of the problems solved in Project Euler
+* Some of the problems solved in UVA Online Judge while reading the book Competitive Programming
 * Binary search over a sorted array
 * Eight queens problem
 * Factorial calculation, the recursive way
