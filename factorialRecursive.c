@@ -31,7 +31,7 @@ int *allFactorials(int n){
 
 int main(int argc, char *argv[]){
 	int n; //biggest factorial to calculate
-	int i, j, size;
+	int i;
 	int *results;
 
 	if (argc>1){
