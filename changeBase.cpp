@@ -4,7 +4,7 @@
 using namespace std;
 
 /**
- * Simple function changes the base of a number.
+ * Function changes the base of a number.
  */
 int changeBase(int number, int fromBase, int toBase, bool debug = false){
 
